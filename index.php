@@ -25,7 +25,7 @@
 <?php
 require_once("/home/config.php");
 $con = mysqli_connect($host,$username,$password,$database);
-echo mysqli_connect_error();
+echo mysqli_connect_errno();
 if (mysqli_connect_errno())
         {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();

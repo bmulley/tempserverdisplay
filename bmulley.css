@@ -1,0 +1,5 @@
+body { font-family: 'Roboto', sans-serif;}
+.cardbox {margin: 2%; padding: 0px; background-color: #575757; text-align: center; border-radius:30px;}
+.card-header{ color: #dddddd; padding: 20px 0px; font-size: 1.5em; font-style: bold;}
+.card-body{color: #fff; padding: 0px; font-size: 5em;}
+.card-footer{color: #dddddd; padding: 20px 0px; font-size: 1.125em;}

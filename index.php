@@ -33,7 +33,6 @@ if (mysqli_connect_errno())
         }
 
 $result = mysqli_query($con, "Select name,temp,time FROM temp");
-echo $result;
 ?>
 
 <div class="container-fluid", style="text-align: center">

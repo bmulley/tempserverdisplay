@@ -29,6 +29,7 @@ $con = mysqli_connect($host,$username,$password,$database);
 if (mysqli_connect_errno())
         {
         echo "Failed to connect to MySQL: " . mysqli_connect_error();
+        exit;
         }
 
 $result = mysqli_query($con, "Select * FROM temperature WHERE id IN( SELECT max(id) from temperature group by name) order by name");

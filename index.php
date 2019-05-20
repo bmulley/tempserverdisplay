@@ -32,7 +32,7 @@ if (mysqli_connect_errno())
         exit;
         }
 
-$result = mysqli_query($con, "Select * FROM temp WHERE id IN( SELECT max(id) from temp group by name) order by name");
+$result = mysqli_query($con, "Select * FROM temp");
 echo $result;
 ?>
 

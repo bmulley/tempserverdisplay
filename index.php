@@ -33,7 +33,7 @@ if (mysqli_connect_errno())
         }
 
 $result = mysqli_query($con, "Select * FROM temperature WHERE id IN( SELECT max(id) from temperature group by name) order by name");
-
+echo $result;
 ?>
 
 <div class="container-fluid", style="text-align: center">

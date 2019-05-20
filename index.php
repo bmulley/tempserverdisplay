@@ -39,7 +39,7 @@ echo $result;
 <div class="container-fluid", style="text-align: center">
         <div class="row">
                         <?php
-                                while($row = mysqli_fetch_array($result)) {
+                                while($row = mysqli_fetch_assoc($result)) {
                                         echo '<div class="col-md-3 card cardbox">';
                                                 echo '<div class="card-header">';
                                                         echo $row['name'];

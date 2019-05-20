@@ -24,7 +24,7 @@
 <body>
 <?php
 require_once("/home/config.php");
-$con = mysqli_connect($host,$username,$password,$database);
+$con = mysqli_connect($host,$username,$password,$dbname);
 echo mysqli_connect_errno();
 if (mysqli_connect_errno())
         {

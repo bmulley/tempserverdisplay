@@ -32,7 +32,7 @@ if (mysqli_connect_errno())
         exit;
         }
 
-$result = mysqli_query($con, "Select * FROM temp");
+$result = mysqli_query($con, "Select name,temp,time FROM temp");
 echo $result;
 ?>
 
